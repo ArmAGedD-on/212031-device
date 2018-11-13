@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кирилл Шебеко](https://up.htmlacademy.ru/htmlcss/23/user/212031).
-* Наставник: `Неизвестно`.
+* Наставник: Владислав Балабанович(https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
