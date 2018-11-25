@@ -7,20 +7,28 @@
 	<body>
 		<header class="main-header">
 			<section class="header-left">
-				<a class="logo">DEVICE</a>
-				<form action="#">
-					<input type="text">
-					<input type="submit" value="Найти">
+				<a aria-label="Логотип магазина аксессуаров Девайс" class="logo">DEVICE</a>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<input aria-label="Панель поиска" type="text" name="searching-panel">
+					<button type="submit" name="">Найти</button>
 				</form>
-				<a class="catalog" href="#">Каталог товаров</a>
-				<ul>
-					<li><a href="">Виртуальная реальность</a></li>
-					<li><a href="">Моноподы для селфи</a></li>
-					<li><a href="">Экшн-камеры</a></li>
-					<li><a href="">Фитнес-браслеты</a></li>
-					<li><a href="">Умные часы</a></li>
-					<li><a href="">Квадрокоптеры</a></li>
-				</ul>
+				<div class="catalog">
+					<ul>
+						<li><a href="#">Каталог товаров</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Виртуальная реальность</a></li>
+						<li><a href="">Моноподы для селфи</a></li>
+						<li><a href="">Экшн-камеры</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Фитнес-браслеты</a></li>
+						<li><a href="">Умные часы</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Квадрокоптеры</a></li>
+					</ul>
+				</div>
 			</section>
 			<section class="header-right">
 				<ul>
@@ -109,14 +117,14 @@
 						Вы можете забрать товар сами заехав в наш офис. Заодно, вы
 						сможете проверить работоспособность покупки. Всякое бывает.
 					</p>
-					<a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
+					<a href="#"><img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей, 15"></a>
 					<a href="#">Напишите нам</a>
 				</div>
 			</section>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-contacts">
-				<a class="logo">DEVICE</a>
+				<a aria-label="Логотип магазина аксессуаров Девайс" class="logo">DEVICE</a>
 				<p class="footer-adress">
 					г. Москва, ул. Строителей, 15
 				</p>
@@ -128,23 +136,51 @@
 					<li><a href="">Контакты</a></li>
 				</ul>
 				<ul>
-					<li><a class="social-button" href="#">Facebook</a></li>
-					<li><a class="social-button" href="#">Instagram</a></li>
-					<li><a class="social-button" href="#">Twitter</a></li>
+					<li><a class="social-button" href="#">Наша страничка в Facebook</a></li>
+					<li><a class="social-button" href="#">Наша страничка в Instagram</a></li>
+					<li><a class="social-button" href="#">Наша страничка в Twitter</a></li>
 				</ul>
 			</div>
 			<div class="user-block">
 				<ul>
 					<li><a class="user-loin" href="#">Войти</a></li>
 					<li><a class="comparing" href="">Сравнить</a></li>
-					<li><a class="comparing" href="">Сравнить</a></li>
 					<li><a class="basket" href="">Корзина</a></li>
 				</ul>
 				<p class="tel">
 					Тел.: +7(495)495-95-95
 				</p>
-				<a class="academy-link" href="https://htmlacademy.ru"></a>
+				<a class="academy-link" href="https://htmlacademy.ru">На сайт htmlacademy.ru</a>
 			</div>
 		</footer>
+		<section class="modal modal-write-to-us">
+			<h2 class="visually-hidden">Напишите нам</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label>Ваше имя:<br>
+						<input area-label="Поле ввода имени и фамилии" type="text" name="login" placeholder="Имя Фамилия">
+					</label>
+				</p>
+				<p>
+					<label>Ваш e-mail:<br>
+						<input area-label="Поле ввода адреса почты" type="text" name="e-mail" placeholder="e-mail@example.com">
+					</label>
+				</p>
+				<p>
+					<label>Текст письма:<br>
+						<textarea area-label="Поле ввода текста письма" name="letter-text" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+					</label>
+				</p>
+				<button type="submit">Отправить</button>
+				<button class="modal-close" type="button">Закрыть</button>
+			</form>
+		</section>
+		<section class="modal modal-map">
+			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<p>
+				<img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+			</p>
+			<button class="modal-close" type="button"></button>
+		</section>
 	</body>
 </html>
