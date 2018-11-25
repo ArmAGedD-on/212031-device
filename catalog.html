@@ -7,13 +7,15 @@
 	<body>
 		<header class="main-header">
 			<section class="header-left">
-				<a aria-label="Логотип магазина аксессуаров Девайс" href="index.html" class="logo">DEVICE</a>
+				<a href="index.html" class="logo">DEVICE</a>
 				<form action="https://echo.htmlacademy.ru" method="post">
 					<input aria-label="Панель поиска" type="text" name="searching-panel">
-					<button type="submit" name="">Найти</button>
+					<button type="submit" name="searching-button">Найти</button>
 				</form>
 				<div class="">
-					<ul><li><a class="catalog" href="#">Каталог товаров</a></li></ul>
+					<ul>
+						<li>
+							<a class="catalog" href="#">Каталог товаров</a></li></ul>
 					<ul>
 						<li><a href="">Виртуальная реальность</a></li>
 						<li><a href="">Моноподы для селфи</a></li>
@@ -31,7 +33,7 @@
 			<section class="header-right">
 				<ul>
 					<li><a class="user-loin" href="#">Валентин Петухов</a></li>
-					<li><button area-label="Сменить пользователя" type="button" name="exit">Выйти</button></li>
+					<li><button type="button" name="exit">Выйти</button></li>
 					<li><a class="comparing" href="#">Сравнить</a></li>
 					<li><a class="basket" href="#">Корзина</a></li>
 				</ul>
@@ -53,9 +55,9 @@
 			</ul>
 			<section class="filtr">
 				<h2 class="block-heading">Фильтр:</h2>
-				<form action="#">
+				<form action="https://echo.htmlacademy.ru" method="post">
 					<fieldset>
-						<legend>Цвет:</legend>
+						<legend class="form-header">Цвет:</legend>
 						<ul>
 							<li><label><input type="checkbox" name="black">Черный</label></li>
 							<li><label><input type="checkbox" name="white">Белый</label></li>
@@ -65,7 +67,7 @@
 						</ul>
 					</fieldset>
 					<fieldset>
-						<legend>Bluetooth:</legend>
+						<legend class="form-header">Bluetooth:</legend>
 						<ul>
 							<li><label><input type="radio" name="bluetooth" checked>Есть</label></li>
 							<li><label><input type="radio" name="bluetooth">Нет</label></li>
@@ -100,7 +102,7 @@
 		</main>
 		<footer class="main-footer">
 			<div class="footer-contacts">
-				<a area-label="Логотип магазина аксессуаров Девайс" class="logo" class="logo" href="index.html">DEVICE</a>
+				<a class="logo" href="index.html">DEVICE</a>
 				<p class="footer-adress">
 					г. Москва, ул. Строителей, 15
 				</p>
@@ -119,8 +121,8 @@
 			</div>
 			<div class="user-block">
 				<ul>
-					<li><a class="user-loin" href="#">Валентин Петухов</a></li>
-					<li><button area-label="Сменить пользователя" type="button" name="exit">Выйти</button></li>
+					<li><a class="user-login" href="#">Валентин Петухов</a></li>
+					<li><button type="button" name="exit">Выйти</button></li>
 					<li><a class="comparing" href="">Сравнить</a></li>
 					<li><a class="basket" href="">Корзина</a></li>
 				</ul>
