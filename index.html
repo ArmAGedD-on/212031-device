@@ -2,6 +2,8 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/normalze.css">
+		<link rel="stylesheet" href="css/style.css">
 		<title>Device-Главная</title>
 	</head>
 	<body>
@@ -9,35 +11,35 @@
 			<section class="header-left">
 				<a class="logo">DEVICE</a>
 				<form action="https://echo.htmlacademy.ru" method="post">
-					<input aria-label="Панель поиска" type="text" name="searching-panel">
+					<input aria-label="Панель поиска" type="text" name="searching-panel" placeholder="Поиск по сайту">
 					<button type="submit" name="searching-button">Найти</button>
 				</form>
 				<div class="catalog">
-					<ul>
+					<ul class="catalog-main-block">
 						<li><a href="#">Каталог товаров</a></li>
 					</ul>
-					<ul>
-						<li><a href="">Виртуальная реальность</a></li>
+					<ul class="first-list">
+						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="catalog.html">Моноподы для селфи</a></li>
-						<li><a href="">Экшн-камеры</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
 					</ul>
-					<ul>
+					<ul class="second-list">
 						<li><a href="">Фитнес-браслеты</a></li>
 						<li><a href="">Умные часы</a></li>
 					</ul>
-					<ul>
+					<ul class="third-list">
 						<li><a href="">Квадрокоптеры</a></li>
 					</ul>
 				</div>
 			</section>
 			<section class="header-right">
-				<ul>
-					<li><a class="user-loin" href="#">Войти</a></li>
+				<ul class="user-block">
+					<li><a class="user-login" href="#">Войти</a></li>
 					<li><a class="comparing" href="#">Сравнить</a></li>
 					<li><a class="basket" href="#">Корзина</a></li>
 				</ul>
 				<nav class="main-navigation">
-					<ul class="header-navigation">
+					<ul class="site-navigation">
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">Гарантия</a></li>
 						<li><a href="#">Контакты</a></li>
@@ -60,7 +62,7 @@
 			</section>
 			<section class="about-us">
 				<div class="about-us-left">
-					<h2>О нас</h2>
+					<h2 class="about-us-heading">О нас</h2>
 					<p>
 						Огромный выбор гаджетов не оставит равнодушным гика,
 						который есть в каждом из нас.
@@ -69,7 +71,7 @@
 						Мы можем доставить ваш товар в самые отдаленные точки
 						России! DEVICE работает со многими транспотрными компаниями:
 					</p>
-					<ul>
+					<ul class="delivering">
 						<li>Деловые линии</li>
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
@@ -77,7 +79,7 @@
 					<a class="button" href="#">Подробнее о нас</a>
 				</div>
 				<div class="about-us-right">
-					<h2>Контакты</h2>
+					<h2 class="about-us-heading">Контакты</h2>
 					<p>
 						Вы можете забрать товар сами заехав в наш офис. Заодно, вы
 						сможете проверить работоспособность покупки. Всякое бывает.
@@ -95,7 +97,7 @@
 				</p>
 			</div>
 			<div class="footer-social">
-				<ul class="footer-navigation">
+				<ul class="footer-site-navigation site-navigation">
 					<li><a href="">Доставка</a></li>
 					<li><a href="">Гарантия</a></li>
 					<li><a href="">Контакты</a></li>
@@ -106,9 +108,9 @@
 					<li><a class="social-button" href="#">Наша страничка в Twitter</a></li>
 				</ul>
 			</div>
-			<div class="user-block">
-				<ul>
-					<li><a class="user-loin" href="#">Войти</a></li>
+			<div>
+				<ul class="footer-user-block user-block">
+					<li><a class="user-login" href="#">Войти</a></li>
 					<li><a class="comparing" href="">Сравнить</a></li>
 					<li><a class="basket" href="">Корзина</a></li>
 				</ul>
