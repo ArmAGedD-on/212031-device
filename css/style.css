@@ -41,6 +41,18 @@ a {
 	text-decoration: none;
 }
 
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+}
+
+.header-left {
+	width: 360px;
+	margin-right: 240px;
+}
+
 .logo {
 	font-size: 48px;
 	line-height: 48px;
@@ -49,6 +61,7 @@ a {
 }
 
 .main-header {
+	display: flex;
 	background-color: #f7e296;
 }
 
@@ -76,6 +89,7 @@ a {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: none; /*временно*/
 }
 
 .first-list a,
@@ -107,6 +121,12 @@ a {
 	line-height: 48px;
 }
 
+.about-us {
+	display: flex;
+	justify-content: space-between;
+}
+
+
 .about-us-heading {
 	font-size: 47px;
 	line-height: 48px;
@@ -128,6 +148,19 @@ a {
 .main-footer {
 	color: #fff;
 	background-color: #464646;
+}
+
+.main-footer .container {
+	display: flex;
+}
+
+.footer-contacts {
+	width: 260px;
+	margin-right: 100px;
+}
+
+.footer-social {
+	width: 440px;
 }
 
 .main-footer .logo {
@@ -161,9 +194,35 @@ a {
 	color: #464646;
 }
 
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
 .block-heading,
 .form-header {
 	font-size: 18px;
+}
+
+.filtr {
+	width: 300px;
+}
+
+.sorting {
+	width: 760px;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	width: 760px;
+}
+
+.product-card {
+	width: 360px;
+	justify-content: space-between;
+	margin-right: 20px;
+	margin-bottom: 50px;
 }
 
 .filtr fieldset {
