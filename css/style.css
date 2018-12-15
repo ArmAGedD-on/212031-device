@@ -1,27 +1,27 @@
-@font-face{
+@font-face {
 	font-family: "Gilroy";
-	src: url("../fonts/gilroylight.woff2");
+	src: local("Gilroy"), url("../fonts/gilroylight.woff2");
 	font-weight: lighter;
 	font-style: normal;
 }
 
-@font-face{
+@font-face {
 	font-family: "Gilroy";
-	src: url("../fonts/gilroyextrabold.woff2");
+	src: local("Gilroy"), url("../fonts/gilroyextrabold.woff2");
 	font-weight: bold;
 	font-style: normal;
 }
 
-@font-face{
-	font-family: "OpenSans";
-	src: url("../fonts/opensans.woff2");
+@font-face {
+	font-family: "Open Sans";
+	src: local("Open Sans"), url("../fonts/opensans.woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
-@font-face{
-	font-family: "OpenSans";
-	src: url("../fonts/opensanslight.woff2");
+@font-face {
+	font-family: "Open Sans";
+	src: local("Open Sans"), url("../fonts/opensanslight.woff2");
 	font-weight: lighter;
 	font-style: normal;
 }
@@ -227,7 +227,7 @@ input[type="radio"].visually-hidden {
 }
 
 .searching-form input::placeholder {
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height:  30px;
 	font-weight: lighter;
@@ -302,7 +302,7 @@ outline: 1px transparent;
 .first-list a,
 .second-list a,
 .third-list a {
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: lighter;
 	font-size: 15px;
 	line-height: 36px;
@@ -315,7 +315,7 @@ outline: 1px transparent;
 	flex-wrap: wrap;
 	margin-top: 43px;
 	padding: 0;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: lighter;
 	list-style: none;
 }
@@ -346,7 +346,7 @@ outline: 1px transparent;
 
 .exit {
 	border: none;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: lighter;
@@ -399,6 +399,291 @@ outline: 1px transparent;
 	margin-right: 108px;
 }
 
+/*Начало стилей слпйдера*/
+
+.slider {
+	position: relative;
+	width: 1040px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.slider-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slider aside {
+	width: 480px;
+}
+
+.slider-table td {
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 48px;
+	letter-spacing: 0.36px;
+}
+
+.slider-table th {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 13px;
+	font-weight: lighter;
+	line-height: 20px;
+	letter-spacing: 0.13px;
+	color: #464646;
+}
+
+.slider-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider li:nth-of-type(2),
+.slider li:nth-of-type(3) {
+	display: none;
+}
+
+.slider-heading {
+	padding: 0;
+	margin: 0;
+	font-size: 47px;
+	line-height: 56px;
+	font-weight: bold;
+	letter-spacing: 0.47px;
+}
+
+.slider-description {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: lighter;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+}
+
+.slider-controls {
+	position: absolute;
+	right: 0;
+	bottom: 160px;
+	z-index: 20;
+}
+
+.slider-controls label{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #464646;
+	border-radius: 50%;
+}
+
+.slider-item {
+	display: none;
+	justify-content: space-between;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+	display: flex;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+	display: flex;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+	display: flex;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item-1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item-2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item-3::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -3px;
+	z-index: 2;
+	width: 2px;
+	height: 2px;
+	background-color: inherit;
+	border: 2px solid #464646;
+	border-radius: 50%;
+}
+
+/*Конец стилей слайдера*/
+
+/*Блок товаров*/
+
+.products-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.products-image {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 160px;
+	height: 160px;
+	margin-bottom: 33px;
+	letter-spacing: 0.18px;
+	background-color: #f7e296;
+}
+
+.products-item {
+	margin-right: 40px;
+}
+
+.products-item:last-child {
+	margin-right: 0;
+}
+
+.products-item:nth-child(2) svg {
+	margin-top: 40px;
+}
+
+/*Конец блока товаров*/
+
+/*Блок услуг*/
+
+.services-gradient  {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid transparent;
+	background: linear-gradient(to top, #e5e5e5 0%, #e5e5e5 75%, 
+		#fff 75%, #fff 100%)
+}
+
+.services {
+	display: flex;
+	margin-bottom: 165px;
+}
+
+.services-image-box {
+	width: 175px;
+	height: 200px;
+}
+
+.services-list {
+	position: relative;
+	width: 280px;
+	padding: 0;
+	margin: 0;
+	margin-top: 94px;
+	margin-right: 120px;
+	list-style: none;
+}
+
+.services-list::before {
+	content: "";
+	position: absolute;
+	top: -80px;
+	right: 0;
+	height: 320px;
+	width: 7px;
+	background-color: #000; 
+}
+
+.services-list label {
+	width: ;
+}
+
+.services aside {
+	margin-top: 94px;
+}
+
+.services-heading {
+	padding: 0;
+	margin: 0;
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.services-description {
+	width: 440px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: lighter;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.services-block-col {
+	margin-right: 130px;
+}
+
+.services aside:nth-of-type(1) {
+	display: none;
+}
+
+.services aside:nth-of-type(2) {
+	display: none;
+}
+
+.services aside:nth-of-type(3) {
+	display: none;
+}
+
+
+#sbtn-1:checked ~ aside:nth-of-type(1) {
+	display: flex;
+}
+
+#sbtn-2:checked ~ aside:nth-of-type(2) {
+	display: flex;
+}
+
+#sbtn-3:checked ~ aside:nth-of-type(3) {
+	display: flex;
+}
+
+#sbtn-1:checked ~ .services-list .services-item-1 {
+	padding-right: 73px;
+	background: #000;
+	color: #f7e184;
+}
+
+#sbtn-2:checked ~ .services-list .services-item-2 {
+	padding-right: 73px;
+	background: #000;
+	color: #f7e184;
+}
+
+#sbtn-3:checked ~ .services-list .services-item-3 {
+	padding-right: 73px;
+	background: #000;
+	color: #f7e184;
+}
+
+/*Конец блока услуг*/
+
+/*Блок производителей*/
+
+.productors-list {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	padding: 0;
+	list-style: none;
+}
+
+.productors-item {
+	opacity: 0.2;
+}
+
+.productors-item:hover {
+	opacity: 1;
+}
+
+/*Конец блока производителей*/
 .catalog-main-block {
 	margin-top: 25px;
 }
@@ -453,7 +738,7 @@ outline: 1px transparent;
 
 .about-us p {
 	margin-top: 43px;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: lighter;
 	line-height: 30px;
@@ -624,7 +909,7 @@ outline: 1px transparent;
 
 .footer-adress {
 	margin: 0;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: lighter;
 }
 
@@ -632,7 +917,7 @@ outline: 1px transparent;
 	margin: 0;
 	letter-spacing: 0.8px;
 	text-align: right;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: lighter;
 }
 
@@ -647,7 +932,7 @@ outline: 1px transparent;
 	margin: 0;
 	padding: 0;
 	margin-top: 25px;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: lighter;
 	color: #000;
@@ -702,7 +987,7 @@ outline: 1px transparent;
 }
 
 .product-card:nth-child(2n+1) {
-	margin-right: 20px;
+	margin-right: 40px;
 }
 
 .product-card {
@@ -737,7 +1022,7 @@ outline: 1px transparent;
 .product-card-hover .to-compare {
 	border: 0;
 	background: none;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: lighter;
 	line-height: 36px;
@@ -759,7 +1044,7 @@ outline: 1px transparent;
 }
 
 .filter-option {
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: lighter;
 	line-height: 40px;
 }
@@ -854,12 +1139,273 @@ outline: 1px transparent;
 }
 
 .product-price {
-	margin-top:;
 	color: #000;
 	font-weight: lighter;
 	font-size: 16px; 
 }
 
-.modal {
-	display: none;
+.range-controls {
+	position: relative;
+	width: 220px;
+	height: 23px;
+	background-color: transparent;
+	border-radius: 3px;
+	overflow: hidden;
 }
+
+.scale {
+	position: absolute;
+	top: 50%;
+	width: 180px;
+	height: 2px;
+	margin-top: -1px;
+	background-color: #e1e1e1;
+}
+
+.bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60%;
+	height: 2px;
+	background-color: #44b97d;
+}
+
+.toggle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #ffffff;
+	margin-top: -9px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
+}
+
+.max-toggle {
+	left: 60%;
+}
+
+.price-controls {
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	font-weight: lighter;
+	color: rgba(0,0,0,0.2);
+}
+
+.price-controls input {
+	width: 75px;
+	border: none;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: lighter;
+	text-align: left;
+	color: rgba(0,0,0,0.2);
+	background: transparent;
+	outline: 1px transparent;
+}
+
+.price-controls .min-price {
+	margin-left: 5px;
+}
+
+.price-controls .max-price {
+	margin-left: 5px;
+}
+
+.paginator {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 27px 30px;
+	background-color: #ebebeb;
+	margin-bottom: 75px;
+}
+
+.paginator button {
+	border: none;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	letter-spacing: 3.2px;
+	text-transform: uppercase;
+	background: transparent;
+	cursor: pointer;
+}
+
+.paginator-pages {
+	display: flex;
+	justify-content: space-between;
+	width: 88px;
+}
+
+.paginator-pages a {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.3);
+}
+.paginator-pages .active {
+	color: rgba(0,0,0,1);
+}
+
+
+/* Начало модалок */
+
+.modal {
+	position: fixed;
+
+}
+
+.modal-write-to-us {
+	display: none;
+	top: 50px;
+	left: 50%;
+	width: 760px;
+	padding: 90px 100px;
+	margin-left: -630px;
+	background-color: #fff;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-write-to-us form {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+}
+
+.modal-write-to-us input[type="text"] {
+	box-sizing: border-box;
+	width: 360px;
+	padding: 17px 20px;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+.modal-write-to-us p:nth-of-type(1) {
+	margin-right: 40px;
+}
+
+.modal-write-to-us textarea {
+	box-sizing: border-box;
+	width: 760px;
+	padding: 17px 20px;
+	border: none;
+	background-color: #f2f2f2;
+	resize: none;
+}
+
+.modal-form-close {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	width: 55px;
+	height: 55px;
+	border: none;
+	border-radius: 50%;
+	font-size: 0;
+	background-color: #f7e296;
+}
+
+.modal-form-close::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 50%;
+	width: 2px;
+	height: 30px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}
+
+.modal-form-close::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 50%;
+	width: 2px;
+	height: 30px;
+	background-color: #fff;
+	transform: rotate(-45deg);
+}
+
+.modal-write-to-us input::placeholder {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height:  30px;
+	font-weight: normal;
+	color: rgba(0,0,0,0.3);
+	letter-spacing: 0.01em;
+}
+
+.modal-write-to-us textarea::placeholder {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height:  18px;
+	font-weight: normal;
+	color: rgba(70,70,70,0.4);
+}
+
+.modal-map {
+	display: none;
+	top: 50px;
+	left: 50%;
+	width: 760px;
+	margin-left: -630px;
+	width: 960px;
+	height: 559px;
+	background-color: #fff;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-map p {
+	margin: 0;
+	padding: 0;
+}
+
+.modal-map-close {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+	width: 55px;
+	height: 55px;
+	border: none;
+	border-radius: 50%;
+	font-size: 0;
+	background-color: #f7e296;
+}
+
+.modal-map-close::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 50%;
+	width: 2px;
+	height: 30px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}
+
+.modal-map-close::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 50%;
+	width: 2px;
+	height: 30px;
+	background-color: #fff;
+	transform: rotate(-45deg);
+}
+
+/* Конец модалок */
