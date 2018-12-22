@@ -1,27 +1,27 @@
 @font-face {
 	font-family: "Gilroy";
-	src: local("Gilroy"), url("../fonts/gilroylight.woff2");
+	src: local("Gilroy"), url(../fonts/gilroylight.woff2);
 	font-weight: lighter;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Gilroy";
-	src: local("Gilroy"), url("../fonts/gilroyextrabold.woff2");
+	src: local("Gilroy"), url(../fonts/gilroyextrabold.woff2);
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Open Sans";
-	src: local("Open Sans"), url("../fonts/opensans.woff2");
+	src: local("Open Sans"), url(../fonts/opensans.woff2);
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Open Sans";
-	src: local("Open Sans"), url("../fonts/opensanslight.woff2");
+	src: local("Open Sans"), url(../fonts/opensanslight.woff2);
 	font-weight: lighter;
 	font-style: normal;
 }
@@ -436,7 +436,7 @@ outline: 1px transparent;
 }
 
 .catalog-header .user-login {
-	padding-right: 70px;
+	padding-right: 58px;
 }
 
 .main-navigation {
@@ -445,6 +445,7 @@ outline: 1px transparent;
 }
 
 .exit {
+	margin-left: 10px;
 	border: none;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
@@ -1239,11 +1240,16 @@ outline: 1px transparent;
 .footer-user-block li:nth-of-type(3) {
 	margin-right: 0;
 }
+
 .footer-user-block a,
 .footer-site-navigation a,
 .footer-user-block button
  {
 	color: #fff;
+}
+
+.footer-user-block .exit{
+	margin-left: 0;
 }
 
 .footer-site-navigation a:hover {
@@ -2164,5 +2170,31 @@ outline: 1px transparent;
 		display: none;
 		position: absolute;
 		bottom: 2px;
+	}
+
+	.exit {
+		background-color: transparent;
+	}
+
+	.slider-item:nth-child(3) h3 {
+		position: relative;
+		width: 507px;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 13px;
+	}
+
+	.slider-table th {
+		text-align: left;
+	}
+
+	.second-line  {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.second-line .footer-site-navigation {
+		margin-left: 160px;
+		margin-right: 210px;
 	}
 }
