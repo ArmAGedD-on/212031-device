@@ -1570,7 +1570,6 @@ outline: 1px transparent;
 	line-height: 36px;
 	letter-spacing: 0,13px;
 	color: rgba(0,0,0,0.5);
-	outline: 1px transparent;
 	cursor: pointer;
 }
 
@@ -1629,7 +1628,8 @@ outline: 1px transparent;
 					user-select: none;
 }
 
-.device-color-mark + .color-indicator {
+.device-color-mark + label::before {
+	content: "";
 	position: absolute;
 	top: 7px;
 	left: 0;
@@ -1639,7 +1639,8 @@ outline: 1px transparent;
 	opacity: 1;
 }
 
-.device-color-mark:checked + .color-indicator {
+.device-color-mark:checked + label::before {
+	content: "";
 	position: absolute;
 	top: 7px;
 	left: 0;
@@ -1649,23 +1650,28 @@ outline: 1px transparent;
 	opacity: 1;
 }
 
-.device-color-mark:checked:hover + .color-indicator {
+.device-color-mark:checked:hover + label::before {
 	opacity: 0.6;
 }
 
-.device-color-mark:hover + .color-indicator {
+.device-color-mark:hover + label::before {
 	opacity: 0.6;
 }
 
-.device-color-mark:disabled + .color-indicator {
+.device-color-mark:disabled + label::before {
 	opacity: 0.3;
 }
 
-.device-color-mark:checked:disabled + .color-indicator {
+.device-color-mark:checked:disabled + label::before {
 	opacity: 0.3;
 }
 
-.device-feature-mark + .feature-indicator {
+.device-color-mark:focus + label {
+	outline: 2px solid #00aced;
+}
+
+.device-feature-mark + label::before {
+	content: "";
 	position: absolute;
 	top: 7px;
 	left: 0;
@@ -1675,7 +1681,8 @@ outline: 1px transparent;
 	opacity: 1;
 }
 
-.device-feature-mark:checked + .feature-indicator {
+.device-feature-mark:checked + label::before{
+	content: "";
 	position: absolute;
 	top: 7px;
 	left: 0;
@@ -1685,16 +1692,20 @@ outline: 1px transparent;
 	opacity: 1;
 }
 
-.device-feature-mark:hover + .feature-indicator {
+.device-feature-mark:hover + label::before {
 	opacity: 0.6;
 }
 
-.device-feature-mark:checked:disabled + .feature-indicator {
+.device-feature-mark:checked:disabled + label::before {
 	opacity: 0.3;
 }
 
-.device-feature-mark:disabled + .feature-indicator {
+.device-feature-mark:disabled + label::before {
 	opacity: 0.3;
+}
+
+.device-feature-mark:focus + label {
+	outline: 2px solid #00aced;
 }
 
 .product-link {
