@@ -1,18 +1,4 @@
-.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -webkit-linear-gradient(top, white, black);
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
-}
+
 @font-face {
 	font-family: "Gilroy";
 	src: local("Gilroy"), url(../fonts/gilroylight.woff2);
@@ -119,6 +105,8 @@ a {
 }
 
 .catalog-main-gradient {
+	width: 1200px;
+	margin: 0 auto;
 	margin-top: 45px;
 	background: -webkit-gradient(linear, left top, right top, from(#eeeeee), color-stop(30%, #eeeeee), 
 		color-stop(30%, #fff), to(#fff));
@@ -511,7 +499,7 @@ outline: 1px transparent;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+			flex-wrap: wrap;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
 }
@@ -833,6 +821,7 @@ outline: 1px transparent;
 }
 
 .products-item {
+	width: 160px;
 	margin-right: 40px;
 }
 
@@ -1435,7 +1424,7 @@ outline: 1px transparent;
 			-ms-flex-pack: justify;
 					justify-content: space-between;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+			flex-wrap: wrap;
 	width: 285px;
 }
 
@@ -1929,38 +1918,38 @@ outline: 1px transparent;
 @-webkit-keyframes bounce {
 	0% {
 		-webkit-transform: translateY(-2000px);
-		        transform: translateY(-2000px);
+						transform: translateY(-2000px);
 	}
 	70% {
 		-webkit-transform: translateY(30px);
-		        transform: translateY(30px);
+						transform: translateY(30px);
 	}
 	90% {
 		-webkit-transform: translateY(-10px);
-		        transform: translateY(-10px);
+						transform: translateY(-10px);
 	}
 	100% {
 		-webkit-transform: translateY(0);
-		        transform: translateY(0);
+						transform: translateY(0);
 	}
 }
 
 @keyframes bounce {
 	0% {
 		-webkit-transform: translateY(-2000px);
-		        transform: translateY(-2000px);
+						transform: translateY(-2000px);
 	}
 	70% {
 		-webkit-transform: translateY(30px);
-		        transform: translateY(30px);
+						transform: translateY(30px);
 	}
 	90% {
 		-webkit-transform: translateY(-10px);
-		        transform: translateY(-10px);
+						transform: translateY(-10px);
 	}
 	100% {
 		-webkit-transform: translateY(0);
-		        transform: translateY(0);
+						transform: translateY(0);
 	}
 }
 
@@ -1968,7 +1957,7 @@ outline: 1px transparent;
 	0%,
 	100% {
 		-webkit-transform: translateX(0);
-		        transform: translateX(0);
+						transform: translateX(0);
 	}
 	10%,
 	30%,
@@ -1976,14 +1965,14 @@ outline: 1px transparent;
 	70%,
 	90% {
 		-webkit-transform: translateX(-10px);
-		        transform: translateX(-10px);
+						transform: translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
 		-webkit-transform: translateX(10px);
-		        transform: translateX(10px);
+						transform: translateX(10px);
 	}
 }
 
@@ -1991,7 +1980,7 @@ outline: 1px transparent;
 	0%,
 	100% {
 		-webkit-transform: translateX(0);
-		        transform: translateX(0);
+						transform: translateX(0);
 	}
 	10%,
 	30%,
@@ -1999,14 +1988,14 @@ outline: 1px transparent;
 	70%,
 	90% {
 		-webkit-transform: translateX(-10px);
-		        transform: translateX(-10px);
+						transform: translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
 		-webkit-transform: translateX(10px);
-		        transform: translateX(10px);
+						transform: translateX(10px);
 	}
 }
 
@@ -2286,12 +2275,12 @@ outline: 1px transparent;
 .modal-show {
 	display: block;
 	-webkit-animation: bounce 0.6s;
-	        animation: bounce 0.6s;
+					animation: bounce 0.6s;
 }
 
 .modal-error {
 	-webkit-animation: shake 0.6s;
-	        animation: shake 0.6s;
+					animation: shake 0.6s;
 }
 
 /* Конец модалок */
@@ -2330,8 +2319,8 @@ outline: 1px transparent;
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-pack: start;
-		    -ms-flex-pack: start;
-		        justify-content: flex-start;
+				-ms-flex-pack: start;
+						justify-content: flex-start;
 	}
 
 	.second-line .footer-site-navigation {
